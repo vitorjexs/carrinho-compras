@@ -62,7 +62,10 @@ function adicionar(){
       
    // }
    
-   listaProdutos.innerHTML = `${quantidade.value}x ${item} R$ ${produtoValor}`;
+   listaProdutos.innerHTML = `
+      <section class="carrinho__produtos__produto">
+      <span class="texto-azul">${quantidade.value}x</span> ${item} <span class="texto-azul">${produtoValor}</span>
+      </section>`;   
    total.innerHTML = `R$ ${produtoValor}`;
 }
    
